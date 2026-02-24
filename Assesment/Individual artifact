@@ -1,4 +1,7 @@
 
+from py_compile import main
+
+
 list = []
 
 #display the list of tasks
@@ -18,18 +21,4 @@ def add_task():
    print(f"Added: '{task}'")
 
 
-def remove_task():
-   #Removes an item by its number
-   tasks()
-   if list:
-       try:
-           task_num = int(input("Enter the task number to remove: "))
-           #Checks if the number is valid
-           if 1 <= task_num <= len(list):
-               removed = list.pop(task_num - 1)
-               print(f"Removed: '{removed}'")
-           else:
-               print("Invalid number.")
-       except ValueError:
-           print("Please enter a valid digit.")
-
+d
