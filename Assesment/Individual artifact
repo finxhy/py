@@ -1,2 +1,12 @@
 
-todo_list = []
+list = []
+
+#display the list of tasks
+def tasks():
+   print("TO-DO LIST")
+   if not list:
+       print("Your list is currently empty.")
+   else:
+       for index, task in enumerate(todo_list, start=1):
+           print(f"{index}. [ ] {task}")
+   
