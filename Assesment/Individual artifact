@@ -10,3 +10,26 @@ def tasks():
        for index, task in enumerate(list, start=1):
            print(f"{index}. [ ] {task}")
    
+
+def add_task():
+   #Adds a new item to the list
+   task = input("What do you need to do? ")
+   list.append(task)
+   print(f"Added: '{task}'")
+
+
+def remove_task():
+   #Removes an item by its number
+   tasks()
+   if list:
+       try:
+           task_num = int(input("Enter the task number to remove: "))
+           #Checks if the number is valid
+           if 1 <= task_num <= len(list):
+               removed = list.pop(task_num - 1)
+               print(f"Removed: '{removed}'")
+           else:
+               print("Invalid number.")
+       except ValueError:
+           print("Please enter a valid digit.")
+
