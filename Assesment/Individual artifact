@@ -7,6 +7,6 @@ def tasks():
    if not list:
        print("Your list is currently empty.")
    else:
-       for index, task in enumerate(todo_list, start=1):
+       for index, task in enumerate(list, start=1):
            print(f"{index}. [ ] {task}")
    
