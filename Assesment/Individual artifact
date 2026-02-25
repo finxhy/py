@@ -5,13 +5,15 @@ file = "tasks.json"
 list = []
 
 def load_tasks(): #loads tasks from a data set 
+    global list
     if os.path.exists(file):
             try:
-                with open(file, 'r') as f:
+                with open(file, 'r') as file:
                     global list
-                    list = json.load(f)
+                    list = json.load(file)
             except json.JSONDecodeError:
                 print("Error: The tasks file is corrupted. Starting with an empty list.") #co pilot suggested this to reset if the file is corrupted, prevents crashing and allows user to start fresh
+                list = []
     else:
         list = []
         
@@ -35,6 +37,7 @@ def add_task():
    #Adds a new item to the list
    task = input("What do you need to do? ")
    list.append(task)
+   save_tasks()
    print(f"Added: '{task}'")
 
 
@@ -47,6 +50,7 @@ def remove_task():
            #Checks if the number is valid
            if 1 <= task_num <= len(list):
                removed = list.pop(task_num - 1)
+               save_tasks()
                print(f"Removed: '{removed}'")
            else:
                print("Invalid number.")
@@ -58,7 +62,7 @@ def main():
    load_tasks()
    #handles user input(loops until user exits)
    while True:
-       print("view tasks")
+       print("1. View tasks")
        print("2. Add Task")
        print("3. Remove Task")
        print("4. Exit")
