@@ -1,16 +1,33 @@
+import json 
+import os
 
-from py_compile import main
-
-
+file = "tasks.json"
 list = []
+
+def load_tasks(): #loads tasks from a data set 
+    if os.path.exists(file):
+            try:
+                with open(file, 'r') as f:
+                    global list
+                    list = json.load(f)
+            except json.JSONDecodeError:
+                print("Error: The tasks file is corrupted. Starting with an empty list.") #co pilot suggested this to reset if the file is corrupted, prevents crashing and allows user to start fresh
+    else:
+        list = []
+        
+        
+        
+def save_tasks(): #saves tasks to a data set
+    with open(file, 'w') as f:
+        json.dump(list, f, indent=4) 
 
 #display the list of tasks
 def tasks():
-   print("TO-DO LIST")
+   print("To do list")
    if not list:
        print("Your list is currently empty.")
    else:
-       for index, task in enumerate(list, start=1):
+       for index, task in enumerate(list, start=1): #used AI to come out with this line, it adds numbers to the list of tasks and cleans up the UI 
            print(f"{index}. [ ] {task}")
    
 
@@ -38,9 +55,10 @@ def remove_task():
            
            
 def main():
+   load_tasks()
    #handles user input(loops until user exits)
-    while True:
-       print("\n1. View Tasks")
+   while True:
+       print("view tasks")
        print("2. Add Task")
        print("3. Remove Task")
        print("4. Exit")
@@ -48,7 +66,7 @@ def main():
        choice = input("Select an option (1-4): ")
 
 
-       # Control Structure: Routing user input to functions
+       #Routes user input to functions printed above 
        if choice == '1':
            tasks()
        elif choice == '2':
