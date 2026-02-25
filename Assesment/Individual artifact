@@ -61,6 +61,8 @@ def main():
    load_tasks()
    #handles user input(loops until user exits)
    while True:
+       print("--------------")
+       print("To Do List Manager")
        print("1. View tasks")
        print("2. Add Task")
        print("3. Remove Task")
