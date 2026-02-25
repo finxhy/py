@@ -6,11 +6,10 @@ list = []
 
 def load_tasks(): #loads tasks from a data set 
     global list
-    if os.path.exists(file):
+    if os.path.exists("tasks.json"):
             try:
-                with open(file, 'r') as file:
-                    global list
-                    list = json.load(file)
+                with open("tasks.json", 'r') as f:
+                    list = json.load(f)
             except json.JSONDecodeError:
                 print("Error: The tasks file is corrupted. Starting with an empty list.") #co pilot suggested this to reset if the file is corrupted, prevents crashing and allows user to start fresh
                 list = []
