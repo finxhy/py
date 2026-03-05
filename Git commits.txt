@@ -1,0 +1,74 @@
+Commit: 313c25a7e94321466ff97075b374acd02487875c
+Author: finxhy
+Date: Mar 5, 2026
+Message: Add link to GitHub commits for reference
+
+Commit: 77159b8561ce90408602e46369af1215285bbfac
+Author: finxhy
+Date: Feb 25, 2026
+Message: Cleaning up UI §
+
+Commit: 3ff5b6812ff33362353ce48619c43261aec348fb
+Author: finxhy
+Date: Feb 25, 2026
+Message: added json file to repo
+
+Commit: d027a2e5ef0b7b3d8effe54ea4b2ab7f8f3550bd
+Author: finxhy
+Date: Feb 25, 2026
+Message: Bug fixing with json
+
+Commit: b9d100349e44544bdd67b7021909e61de1e2bed6
+Author: finxhy
+Date: Feb 25, 2026
+Message: Used copilot to add the feature of saving to a json file
+
+Commit: 7ab61c10b4616b2b502d400fea1d9d341983fd14
+Author: finxhy
+Date: Feb 24, 2026
+Message: Checks if the number is valid, handles user input (loops until user exits)
+
+Commit: 1d7f2ae55fd0f3ef7a4b745043336c33e69a0c3c
+Author: finxhy
+Date: Feb 24, 2026
+Message: Removes an item by its number
+
+Commit: 2be70a74b0ff5b7494714b29086120f09643c769
+Author: finxhy
+Date: Feb 24, 2026
+Message: display the list of tasks
+
+Commit: 3fccb63c0bb639359aa152a7cc8c2fb73820ce4a
+Author: finxhy
+Date: Feb 24, 2026
+Message: showing data held in the list, adding new items to the list, and removing items from the list. The program will continue to run until the user chooses to exit.
+
+Commit: c97e3226f14d472a8e24fac66b43e2530459f1f7
+Author: finxhy
+Date: Feb 24, 2026
+Message: show the tasks in the list
+
+Commit: 3530b28a84a09bf7d88577ffb2516e6e43b1f2d1
+Author: finxhy
+Date: Feb 24, 2026
+Message: List to hold the data
+
+Commit: 31b324703e35d6e4a5f8c9862c489ade03209042
+Author: finxhy
+Date: Feb 24, 2026
+Message: https://github.com/finxhy/Individual-assignment-
+
+Commit: 020fea051b74462d41ea8722f901d015152fae64
+Author: finxhy
+Date: Feb 24, 2026
+Message: https://github.com/finxhy/Individual-assignment-
+
+Commit: 29db1cc49c0dcb87dc78610a31827067f7e3355d
+Author: finxhy
+Date: Feb 24, 2026
+Message: test commit
+
+Commit: d8ae578078602a638f4423e58d55d95e655dd228
+Author: finxhy
+Date: Feb 24, 2026
+Message: Initial
